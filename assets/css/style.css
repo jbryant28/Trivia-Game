@@ -1,0 +1,38 @@
+body {
+
+	background-image: url("../images/c.jpg");
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+    /*background-size: contain;*/
+
+    background-size: 100% 100%;
+
+	text-align: center;
+
+}
+
+
+
+
+#start{
+align-items: center;
+	margin-top: 8%;
+
+	height: 75px;
+
+	width: 250px;
+
+	font-size: 30px;
+
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+
+	border-radius: 10px;
+}
+
+#cover{
+
+
+}

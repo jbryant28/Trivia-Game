@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="../Trivia-Game/assets/css/style.css">
+
+  
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="cover">
+
+      <button type="button" align="center" class="btn btn-primary" id="start">start</button>
+  </div>
+  <div id="game">
+    <h1 class="logo">Trivia</h1>
+    <h1 id="timer_line">Time Remaining: <span id="timeText">60 Seconds</span></h1>
+    <h1>1.The square route of 169 is:</h1>
+    <input type="radio" name="q1" value="22">22
+    <input type="radio" name="q1" value="13">13
+    <input type="radio" name="q1" value="7">7
+    <input type="radio" name="q1" value="23">23
+
+    <h1>2. this is the number represented by natural log</h1>
+
+    <input type="radio" name="q2" value="1.22">1.22
+    <input type="radio" name="q2" value="22.34">22.34
+    <input type="radio" name="q2" value="3.44">3.44
+    <input type="radio" name="q2" value="2.71">2.71
+
+
+
+    <h1>3. The right angle value of sine is classified as: </h1>
+
+    <input type="radio" name="q3" value="opposite over hypotenuse"> opposite over hypotenuse
+    <input type="radio" name="q3" value="adjacent over hypotenuse">adjacent over hypotenuse
+    <input type="radio" name="q3" value="opposite over adjacent">opposite over adjacent
+    <input type="radio" name="q3" value="y=mx+b">y=mx+b
+
+
+    <h1>4. What is the value of (pi/6) on the unit circle</h1>
+
+    <input type="radio" name="q4" value="(((2)^(1/2)/2)),(((2)^(1/2)/2))">(((2)^(1/2)/2))
+    <input type="radio" name="q4" value="(((3)^(1/2)/2)),(1/2)">(((3)^(1/2)/2)),(1/2)
+    <input type="radio" name="q4" value="(1/2),(((2)^(1/2)/2))">(1/2),(((2)^(1/2)/2))
+    <input type="radio" name="q4" value="(-(1/2)),(((3)^(1/2)/2)),(1/2)">(-(1/2)),(((3)^(1/2)/2)),(1/2)
+    <input type="radio" name="q4" value="(((2)^(1/2)/2)),(-((2)^(1/2)">(((2)^(1/2)/2)),(-((2)^(1/2)
+
+
+    <h1>5. What is the integral of ln(x)?</h1>
+
+    <input type="radio" name="q5" value="1/x">1/x
+    <input type="radio" name="q5" value="1/x^2">1/x^2
+    <input type="radio" name="q5" value="45">45
+    <input type="radio" name="q5" value="sin(x)">sin(x)
+    <input type="radio" name="q5" value="3.14">3.14
+
+    <h1>6. The derivitive of sin(x) is:</h1>
+
+    <input type="radio" name="q6" value="cos(x)">cos(x)
+    <input type="radio" name="q6" value="-sin(x)">-sin(x)
+    <input type="radio" name="q6" value="tan(x)">tan(x)
+    <input type="radio" name="q6" value="csc(x)">csc(x)
+
+
+    <h1>7. If f=ma find a</h1>
+
+    <input type="radio" name="q7" value="a = m/f">a = m/f
+    <input type="radio" name="q7" value="a = f/m">a = f/m
+    <input type="radio" name="q7" value="a = Gm/r^2">a = Gm/r^2
+    <input type="radio" name="q7" value="a = wf">a = wf
+
+    <h1>8. Gravitational constant is: </h1>
+
+    <input type="radio" name="q8" value="299,792,458">299,792,458 m/s
+    <input type="radio" name="q8" value="1.6726*10^-27">1.6726*10^-27 kg
+    <input type="radio" name="q8" value="9.109 * 10^-31">9.109 * 10^-31 kg
+    <input type="radio" name="q8" value="6.674 * 10^-11 m^3 kg^-1 s^-2">6.674 * 10^-11 m^3 kg^-1 s^-2
+
+    <h1>9.Who is the inventor of calculus</h1>
+
+    <input type="radio" name="q9" value="archimedes">archimedes
+    <input type="radio" name="q9" value="Pythagoras">Pythagoras
+    <input type="radio" name="q9" value="Issac Newton">Issac Newton
+    <input type="radio" name="q9" value="Albert Einstien">Albert Einstien
+
+    <h1>10. What is the formula for half-life</h1>
+
+    <input type="radio" name="q10" value="A=I*(1/2)^t/h">A=I*(1/2)^t/h
+    <input type="radio" name="q10" value="A=P(1+r/n)^nt">A=P(1+r/n)^nt
+    <input type="radio" name="q10" value="A=Pe^rt">A=Pe^rt
+    <input type="radio" name="q10" value="A=(1+r/n)^n - 1">A=(1+r/n)^n - 1
+
+
+    <br>
+
+
+    <button id="submit"> submit</button>
+    <div id="end">
+
+      <h1 id="done"></h1>
+      <br>
+      <h1>Correct Answers: <span id="right">0</span></h1>
+      <h1>Incorrect Answers: <span id="wrong">0</span></h1>
+      <h1>Unanswered: <span id="unchecked">0</span></h1>
+
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script type="text/javascript" src="../Trivia-Game/assets/javascript/js.js"></script>
+    </div>
+
+  </div>
+</body>
+
+</html>
